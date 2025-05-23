@@ -44,3 +44,15 @@ Manual installation:
 3. Move the LP50XX-VXXX (where VXXX is the Version number) to your libraries folder, which is located in your sketch folder. 
    You can view open your sketch folder location by going to your Arduino IDE and selecting the 'File' menu. After this select the 'Preferences' option and another window will open. In here you can see (and set) your sketchbook location.
 4. After the manual installation, restart the Arduino IDE to apply the changes.
+
+
+### Slave address
+- Addresses are 7-bit
+- Broadcast address (7-bit): 0x0C
+
+ | A1 Pin       | A0 Pin       | 7-bit Address (Hex)  |
+ |--------------|--------------|----------------------|
+ | GND          | GND          | 0x14                 |
+ | GND          | VCC          | 0x15                 |
+ | VCC          | GND          | 0x16                 |
+ | VCC          | VCC          | 0x17                 |
